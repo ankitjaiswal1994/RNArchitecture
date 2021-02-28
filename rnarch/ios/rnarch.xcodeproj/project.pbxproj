@@ -59,6 +59,7 @@
 		AFF76B9129B7B80C697A01E7 /* Pods-rnarch-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnarch-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-rnarch-tvOS/Pods-rnarch-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B7D48508D9E83DDD8B13BD21 /* Pods-rnarch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnarch.release.xcconfig"; path = "Target Support Files/Pods-rnarch/Pods-rnarch.release.xcconfig"; sourceTree = "<group>"; };
 		B830EE2FB109D4F5CCD0E5C0 /* Pods-rnarch-rnarchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnarch-rnarchTests.release.xcconfig"; path = "Target Support Files/Pods-rnarch-rnarchTests/Pods-rnarch-rnarchTests.release.xcconfig"; sourceTree = "<group>"; };
+		BBFADC7625DA654D00E5A218 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		D5BABB8D2F286B21B74F5402 /* Pods-rnarch-rnarchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnarch-rnarchTests.debug.xcconfig"; path = "Target Support Files/Pods-rnarch-rnarchTests/Pods-rnarch-rnarchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E0056BD15304E9CB615B0189 /* Pods-rnarch-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnarch-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-rnarch-tvOSTests/Pods-rnarch-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -161,7 +162,6 @@
 				E0056BD15304E9CB615B0189 /* Pods-rnarch-tvOSTests.debug.xcconfig */,
 				F310F09A69018962D5F01FB4 /* Pods-rnarch-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,6 +175,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				BBFADC7625DA654D00E5A218 /* Config.xcconfig */,
 				13B07FAE1A68108700A75B9A /* rnarch */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* rnarchTests */,
@@ -805,6 +806,7 @@
 		};
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBFADC7625DA654D00E5A218 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -865,6 +867,7 @@
 		};
 		83CBBA211A601CBA00E9B192 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBFADC7625DA654D00E5A218 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;

@@ -6,6 +6,8 @@ import { composeComponents } from './src/utils/component';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import LoadAssets from './src/utils/LoadAssets';
 import { Main } from './src/screens/Navigation';
+import { I18nProvider } from './src/locales/I18nProvider';
+import { AuthProvider } from './src/context/Authentication';
 
 const paperTheme: typeof DefaultTheme = {
   ...DefaultTheme,
@@ -23,17 +25,19 @@ const paperTheme: typeof DefaultTheme = {
   },
 };
 
-const Providers = composeComponents(SafeAreaProvider);
+const Providers = composeComponents(SafeAreaProvider, AuthProvider);
 
 const App = () => {
   return (
     <LoadAssets>
       <Providers>
-        <PaperProvider theme={paperTheme}>
-          <ThemeProvider theme={theme}>
-            <Main />
-          </ThemeProvider>
-        </PaperProvider>
+        <I18nProvider>
+          <PaperProvider theme={paperTheme}>
+            <ThemeProvider theme={theme}>
+              <Main />
+            </ThemeProvider>
+          </PaperProvider>
+        </I18nProvider>
       </Providers>
     </LoadAssets>
   );

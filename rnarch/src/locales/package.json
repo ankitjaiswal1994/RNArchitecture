@@ -1,3 +1,6 @@
 {
-    "name": "locales"
+    "name": "locales",
+    "devDependencies": {
+        "@types/i18n-js": "^3.8.0"
+    }
 }

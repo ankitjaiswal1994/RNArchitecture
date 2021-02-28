@@ -8,20 +8,20 @@ export const TextBase = createText<Theme>();
 
 export type TextProps = React.ComponentPropsWithRef<typeof TextBase> &
   ColorProps<Theme> & {
-    localeId?: LocaleString;
+    text?: LocaleString;
     ref?: any;
     values?: Record<string, string>;
   };
 
 export const TextView = forwardRef<typeof TextBase, TextProps>(
-  ({ localeId, children, values, ...props }, ref) => {
+  ({ text, children, values, ...props }, ref) => {
     const textToBeDisplayed = useMemo(() => {
-      if (localeId) {
-        return i18n.t(localeId || '', values);
+      if (text) {
+        return i18n.t(text || '', values);
       } else {
         return children || null;
       }
-    }, [localeId, children, values]);
+    }, [text, children, values]);
     const fontFamily = props.fontFamily ? 'Roboto-Regular' : undefined;
     return (
       <TextBase fontFamily={fontFamily} ref={ref as any} {...props}>
