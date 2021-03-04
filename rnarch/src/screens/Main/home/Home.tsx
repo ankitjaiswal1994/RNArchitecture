@@ -9,13 +9,16 @@ export const Home = () => {
     actions: { changeLanguage },
   } = useAuth();
   return (
-    <Box m="xxxl" height={100} bg="primary">
+    <Box m="xxxl" height={1000} bg="primary">
       <TextView
         style={{ fontSize: 50 }}
         text="app.name"
+        fontFamily="DancingScript-Regular"
         onPress={() => changeLanguage()}
       />
-      <TextView>Read the docs to discover what to do next:</TextView>
+      <TextView fontFamily="DancingScript-Bold" style={{ fontSize: 20 }}>
+        Read the docs to discover what to do next:
+      </TextView>
       <Icon name="home" size={30} />
     </Box>
   );

@@ -22,7 +22,7 @@ export const TextView = forwardRef<typeof TextBase, TextProps>(
         return children || null;
       }
     }, [text, children, values]);
-    const fontFamily = props.fontFamily ? 'Roboto-Regular' : undefined;
+    const fontFamily = props.fontFamily ? 'DancingScript-Regular' : undefined;
     return (
       <TextBase fontFamily={fontFamily} ref={ref as any} {...props}>
         {textToBeDisplayed}

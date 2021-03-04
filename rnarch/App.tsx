@@ -18,10 +18,10 @@ const paperTheme: typeof DefaultTheme = {
     accent: '#f1c40f',
   },
   fonts: {
-    regular: { fontFamily: 'Roboto-Bold' },
-    light: { fontFamily: 'Roboto-Light' },
-    medium: { fontFamily: 'Roboto-Medium' },
-    thin: { fontFamily: 'Roboto-Regular' },
+    regular: { fontFamily: 'DancingScript-Bold' },
+    light: { fontFamily: 'DancingScript-SemiBold' },
+    medium: { fontFamily: 'DancingScript-Medium' },
+    thin: { fontFamily: 'DancingScript-Regular' },
   },
 };
 
