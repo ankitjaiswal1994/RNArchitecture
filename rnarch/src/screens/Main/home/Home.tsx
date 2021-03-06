@@ -11,10 +11,14 @@ export const Home = () => {
   return (
     <Box m="xxxl" height={100} bg="primary">
       <TextView
-        style={{ fontSize: 50 }}
+        variant="largeBody"
         text="app.name"
-        onPress={() => changeLanguage()}
-      />
+        renderChildren
+        onPress={() => changeLanguage()}>
+        <TextView variant="largeBody" onPress={() => changeLanguage()}>
+          s
+        </TextView>
+      </TextView>
       <TextView>Read the docs to discover what to do next:</TextView>
       <Icon name="home" size={30} />
     </Box>

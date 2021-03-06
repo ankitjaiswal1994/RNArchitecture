@@ -193,7 +193,7 @@ const theme = createTheme({
       fontFamily: 'Roboto-Regular',
     },
     largeBody: {
-      fontSize: 16,
+      fontSize: 50,
       fontFamily: 'Roboto-Regular',
     },
     bodyLight: {
@@ -202,6 +202,9 @@ const theme = createTheme({
     },
     regular: {
       fontFamily: 'Roboto-Regular',
+    },
+    bold: {
+      fontFamily: 'Roboto-Bold',
     },
     semiBold: {
       fontFamily: 'Roboto-SemiBold',

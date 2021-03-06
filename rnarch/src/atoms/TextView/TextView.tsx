@@ -11,10 +11,11 @@ export type TextProps = React.ComponentPropsWithRef<typeof TextBase> &
     text?: LocaleString;
     ref?: any;
     values?: Record<string, string>;
+    renderChildren?: boolean;
   };
 
 export const TextView = forwardRef<typeof TextBase, TextProps>(
-  ({ text, children, values, ...props }, ref) => {
+  ({ text, children, values, renderChildren, ...props }, ref) => {
     const textToBeDisplayed = useMemo(() => {
       if (text) {
         return i18n.t(text || '', values);
@@ -26,6 +27,7 @@ export const TextView = forwardRef<typeof TextBase, TextProps>(
     return (
       <TextBase fontFamily={fontFamily} ref={ref as any} {...props}>
         {textToBeDisplayed}
+        {renderChildren === true ? children || null : null}
       </TextBase>
     );
   },
