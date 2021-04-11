@@ -15,8 +15,6 @@ This is the boiler plate of crownstack react-native project. We strictly recomme
 
 ## Pending items
 
-- Fonts implementation to be continued
-- Facing some problem on localization
 - Atoms molecules setup
 - Rest packages
 - Push notification setup
