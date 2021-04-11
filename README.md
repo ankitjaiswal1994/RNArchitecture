@@ -15,7 +15,6 @@ This is the boiler plate of crownstack react-native project. We strictly recomme
 
 ## Pending items
 
-- Atoms molecules setup
 - Rest packages
 - Push notification setup
 - Code Push
