@@ -8,6 +8,7 @@ import LoadAssets from './src/utils/LoadAssets';
 import { Main } from './src/screens/Navigation';
 import { I18nProvider } from './src/locales/I18nProvider';
 import { AuthProvider } from './src/context/Authentication';
+export default from './storybook';
 
 const paperTheme: typeof DefaultTheme = {
   ...DefaultTheme,
