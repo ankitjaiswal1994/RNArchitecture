@@ -48,20 +48,20 @@ type StyledType = ViewProps &
 export type BoxProps = Merge<StyledType, InternalBoxProps>;
 
 export const Box = styled.View<BoxProps>`
-position: relative;
-${variant({
-  variants: {
-    'absolute-center': {
-      position: 'absolute',
-      height: '100%',
-      zIndex: 2,
-      width: '100%',
-      alignItems: 'center',
-      justifyContent: 'center',
+  position: relative;
+  ${variant({
+    variants: {
+      'absolute-center': {
+        position: 'absolute',
+        height: '100%',
+        zIndex: 2,
+        width: '100%',
+        alignItems: 'center',
+        justifyContent: 'center',
+      },
     },
-  },
-})}
-${({ css }) => css && styledCss(css)}
+  })}
+  ${({ css }) => css && styledCss(css)}
 ${space}
 ${color}
 ${layout}
@@ -72,5 +72,4 @@ ${border}
 ${typography}
 ${flexbox}
 ${shadow}
-
 `;

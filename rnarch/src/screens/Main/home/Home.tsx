@@ -2,7 +2,6 @@ import React from 'react';
 import { Box } from 'atoms/Box';
 import { TextView } from 'atoms/TextView';
 import { useAuth } from 'context/Authentication';
-import { Icon } from 'atoms/Icon';
 
 export const Home = () => {
   const {
@@ -20,7 +19,6 @@ export const Home = () => {
         </TextView>
       </TextView>
       <TextView>Read the docs to discover what to do next:</TextView>
-      <Icon name="home" size={30} />
     </Box>
   );
 };
