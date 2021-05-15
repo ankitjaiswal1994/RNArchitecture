@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "449442043388",
+    "project_id": "rn-architecture-256ea",
+    "storage_bucket": "rn-architecture-256ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449442043388:android:af20163af30c42694ace79",
+        "android_client_info": {
+          "package_name": "com.rnarch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449442043388-gg9dvtomkngekljcd8dpcnd6jr8cqf19.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_WGouQFy6W2A5oXu7O5gNUAUrLrAuf2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449442043388-gg9dvtomkngekljcd8dpcnd6jr8cqf19.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
