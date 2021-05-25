@@ -6,7 +6,7 @@ This is the boiler plate of crownstack react-native project. We strictly recomme
 
 - We use typescript within our project. We recommend have a basic look on the typescript before you proceed further. (https://www.typescriptlang.org/docs/handbook/release-notes/overview.html). We will try conclude that what you need to learn about the typescript later.
 - We use 100% functional component with the help of hooks. We find it neat and clean. We recommend you to do so.
-- We are following styled component. (https://styled-components.com/docs/basics#react-native)
+- We are following shopify restyle. (https://github.com/Shopify/restyle)
 - We have created predefined atoms and molecules within this boiler. Basically a wrapper of react native UI component like View will refer to Box. Will write better explanation for this.
 - We use react-native config for handling multiple environment like dev, qa, staging and production. (https://github.com/luggit/react-native-config)
 - We do not encourage to directly use string within our project instead use Localization. We are i18n-js for that. (https://www.npmjs.com/package/react-native-i18n)
