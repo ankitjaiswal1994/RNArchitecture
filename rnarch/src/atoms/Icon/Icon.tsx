@@ -5,7 +5,6 @@ const iconSet = require('../../assets/icon/selection.json');
 import { ViewProps, TouchableOpacity } from 'react-native';
 import { LiteralUnion } from 'typings/utils';
 import { PressEvent } from 'typings/utils';
-
 export type IconName = LiteralUnion<'home' | 'music' | 'phone', string>;
 export interface IconProps extends ViewProps {
   name: IconName;
