@@ -32,5 +32,4 @@ Note: If you get an option to setup server press 'Yes' and set it up.
 - Rest packages
 - Push notification setup
 - Code Push
-- Multiple package name handling
 - Documentation is pending
