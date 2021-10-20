@@ -2,6 +2,7 @@ import * as React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Home } from './Main/home';
 import { RouteProp } from '@react-navigation/native';
+import { LoginScreen } from '/Users/srishtimaurya/Documents/Crownstack/training /architecture/practise/rnarch/src/screens/login/LoginScreen.tsx';
 
 export type MainStackParamList = {
   Home: undefined;
@@ -15,7 +16,8 @@ export const Main = () => {
       screenOptions={{
         headerShown: false,
       }}>
-      <MainStack.Screen name="Home" component={Home} />
+      {/* <MainStack.Screen name="Home" component={Home} /> */}
+      <MainStack.Screen name="Login" component={LoginScreen} />
     </MainStack.Navigator>
   );
 };

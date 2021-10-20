@@ -5,6 +5,8 @@ import { LiteralUnion } from 'typings/utils';
 export const en = {
   'app.name': 'RNARCH',
   'login.sub.title': 'Greater Access to Outdoor ',
+  'login.btn': 'Login',
+  'forget.btn': 'Forget Password',
 };
 
 export type LocaleString = keyof typeof en;

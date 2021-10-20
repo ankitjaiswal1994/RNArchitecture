@@ -1,12 +1,12 @@
-import { Box, BoxProps } from "atoms/Box";
-import { Icon } from "atoms/Icon";
-import { Row } from "atoms/Row";
-import { Text } from "atoms/Text";
-import { Touch } from "atoms/Touch";
-import { LocaleString } from "locales/en";
-import React from "react";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { goBack } from "services/NavigationService";
+import { Box, BoxProps } from 'atoms/Box';
+import { Icon } from 'atoms/Icon';
+import { Row } from 'atoms/Row';
+import { Text } from 'atoms/Text';
+import { Touch } from 'atoms/Touch';
+import { LocaleString } from 'locales/en';
+import React from 'react';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { goBack } from 'services/NavigationService';
 
 type NavbarProps = {
   overrideBack?: () => void;
@@ -28,7 +28,7 @@ export const Navbar = ({
 }: NavbarProps) => {
   const { top } = useSafeAreaInsets();
   const handleBack = () => {
-    if (typeof overrideBack === "function") {
+    if (typeof overrideBack === 'function') {
       overrideBack();
     } else {
       goBack();
@@ -48,7 +48,7 @@ export const Navbar = ({
             <Icon
               size={16}
               color="whiteText"
-              name={backIcon ? "back" : "cancel"}
+              name={backIcon ? 'back' : 'cancel'}
             />
           </Touch>
         ) : null}

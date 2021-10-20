@@ -1,5 +1,5 @@
-import React, { forwardRef, useState, useEffect } from "react";
-import { useDebounce } from "use-debounce";
+import React, { forwardRef, useState, useEffect } from 'react';
+import { useDebounce } from 'use-debounce';
 import {
   ColorProps,
   useRestyle,
@@ -15,17 +15,17 @@ import {
   TypographyProps,
   layout,
   LayoutProps,
-} from "@shopify/restyle";
-import { TextInput as RNTextInput } from "react-native";
-import { HelperText } from "react-native-paper";
-import { Icon, IconProps } from "atoms/Icon";
-import { Theme } from "styles/theme";
-import { Box } from "atoms/Box";
-import { useColor } from "hooks/useColor";
-import { translate } from "utils/locale";
-import { LocaleString } from "locales/en";
-import { Touch } from "atoms/Touch";
-import { Spinner } from "atoms/Spinner";
+} from '@shopify/restyle';
+import { TextInput as RNTextInput } from 'react-native';
+import { HelperText } from 'react-native-paper';
+import { Icon, IconProps } from 'atoms/Icon';
+import { Theme } from 'styles/theme';
+import { Box } from 'atoms/Box';
+import { useColor } from 'hooks/useColor';
+import { translate } from 'utils/locale';
+import { LocaleString } from 'locales/en';
+import { Touch } from 'atoms/Touch';
+import { Spinner } from 'atoms/Spinner';
 
 export type TextInputProps = React.ComponentPropsWithRef<typeof RNTextInput> &
   BorderProps<Theme> &
@@ -34,12 +34,12 @@ export type TextInputProps = React.ComponentPropsWithRef<typeof RNTextInput> &
   SpacingProps<Theme> &
   TypographyProps<Theme> &
   LayoutProps<Theme> &
-  VariantProps<Theme, "textInputVariants"> & {
+  VariantProps<Theme, 'textInputVariants'> & {
     errorMessage?: string | boolean;
     containerProps?: React.ComponentProps<typeof Box>;
     renderRight?: React.ReactNode;
     renderLeft?: React.ReactNode;
-    rightIcon?: IconProps["name"];
+    rightIcon?: IconProps['name'];
     onRightIconPress?: () => void;
     rightIconSize?: number;
     rightIconProps?: Partial<IconProps>;
@@ -48,18 +48,18 @@ export type TextInputProps = React.ComponentPropsWithRef<typeof RNTextInput> &
   };
 
 const variant = createVariant<Theme>({
-  themeKey: "textInputVariants",
+  themeKey: 'textInputVariants',
   defaults: {
-    fontFamily: "Poppins-Regular",
+    fontFamily: 'Poppins-Regular',
     height: 42,
     fontSize: 14.7,
     borderWidth: 1,
     borderRadius: 4,
-    paddingLeft: "m",
-    paddingHorizontal: "s",
-    borderColor: "textInputBorderColor",
-    backgroundColor: "textInputBackground",
-    justifyContent: "center",
+    paddingLeft: 'm',
+    paddingHorizontal: 's',
+    borderColor: 'textInputBorderColor',
+    backgroundColor: 'textInputBackground',
+    justifyContent: 'center',
   },
 });
 const restyleFunctions = [
@@ -90,7 +90,7 @@ export const TextInput = forwardRef<RNTextInput, TextInputProps>(
     ref,
   ) => {
     const props = useRestyle(restyleFunctions as any, rest as any);
-    const darkTextColor = useColor("darkText");
+    const darkTextColor = useColor('darkText');
     const [text, setText] = useState(value);
     const [debouncedValue] = useDebounce(text, 400);
 
@@ -101,8 +101,8 @@ export const TextInput = forwardRef<RNTextInput, TextInputProps>(
     };
     useEffect(() => {
       if (debounce) {
-        if (typeof onChangeText === "function") {
-          onChangeText(debouncedValue || "");
+        if (typeof onChangeText === 'function') {
+          onChangeText(debouncedValue || '');
         }
       }
       // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -162,7 +162,7 @@ export const TextInput = forwardRef<RNTextInput, TextInputProps>(
         />
         <HelperText
           type="error"
-          visible={`${rest.variant}`.toLowerCase().includes("error")}>
+          visible={`${rest.variant}`.toLowerCase().includes('error')}>
           {translate(`${errorMessage}` as LocaleString)}
         </HelperText>
       </Box>
