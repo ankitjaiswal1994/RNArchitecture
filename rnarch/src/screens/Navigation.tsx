@@ -2,7 +2,7 @@ import * as React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Home } from './Main/home';
 import { RouteProp } from '@react-navigation/native';
-import { LoginScreen } from '/Users/srishtimaurya/Documents/Crownstack/training /architecture/practise/rnarch/src/screens/login/LoginScreen.tsx';
+import { LoginScreen } from './login/LoginScreen';
 
 export type MainStackParamList = {
   Home: undefined;

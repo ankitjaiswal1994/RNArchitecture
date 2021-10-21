@@ -7,6 +7,8 @@ export const en = {
   'login.sub.title': 'Greater Access to Outdoor ',
   'login.btn': 'Login',
   'forget.btn': 'Forget Password',
+  'text.username': 'Username',
+  'text.password': 'Password',
 };
 
 export type LocaleString = keyof typeof en;

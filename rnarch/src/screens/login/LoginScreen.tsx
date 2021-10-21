@@ -2,31 +2,19 @@ import React from 'react';
 import { Text } from 'atoms/Text';
 import { Box } from 'atoms/Box';
 import { TextInput } from 'atoms/TextInput';
-import { Button } from '/Users/srishtimaurya/Documents/Crownstack/training /architecture/practise/rnarch/src/molecules/Button/Button.tsx';
-import { StyleSheet } from 'react-native';
+import { Button } from '../../molecules/Button/Button';
+
 export const LoginScreen = () => {
   return (
-    <Box style={styles.container}>
-      <Text style={styles.label}>Username</Text>
+    // style={styles.container}
+    <Box width="90%" alignSelf="center" mt="xl">
+      <Text localeId="text.username" variant="bold" mb="s" />
       <TextInput />
-      <Text style={styles.label}>Password</Text>
+      <Text localeId="text.password" variant="bold" mb="s" />
       <TextInput />
       <Button title="login.btn" variant="primary" />
-      <Box style={styles.mb} />
+      <Box mb="s" />
       <Button title="forget.btn" variant="secondary" />
     </Box>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    margin: 25,
-  },
-  mb: {
-    marginBottom: 10,
-  },
-  label: {
-    fontWeight: 'bold',
-    marginBottom: 10,
-  },
-});
