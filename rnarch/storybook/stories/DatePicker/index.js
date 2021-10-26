@@ -2,21 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { TouchableHighlight } from 'react-native';
 
-export default function Button({ onPress, children, style }) {
+export default function Datepicker({ onPress, style }) {
   return (
-    <TouchableHighlight onPress={onPress} style={style}>
-      {children}
-    </TouchableHighlight>
+    <TouchableHighlight onPress={onPress} style={style}></TouchableHighlight>
   );
 }
 
-Button.defaultProps = {
-  children: null,
+Datepicker.defaultProps = {
   onPress: () => {},
   style: {},
 };
 
-Button.propTypes = {
+Datepicker.propTypes = {
   children: PropTypes.node,
   onPress: PropTypes.func,
 };
