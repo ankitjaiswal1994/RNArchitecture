@@ -42,34 +42,3 @@ storiesOf('CheckBox', module)
       />
     </View>
   ));
-// () => (
-//   2  <form>
-//   3    <Checkbox id="Unchecked" label="Cats" hideLabel onChange={onChange} />
-//   4    <Checkbox id="Checked" label="Cats" hideLabel checked onChange={onChange} />
-//   5    <Checkbox
-//   6      id="With-label-and-error"
-//   7      label="Cats"
-//   8      onChange={onChange}
-//   9      error="There's a snake in my boots"
-//   10    />
-//   11    <Checkbox id="With-label" label="Cats" onChange={onChange} />
-//   12    <Checkbox
-//   13      appearance="secondary"
-//   14      id="With-label"
-//   15      label="Secondary"
-//   16      checked
-//   17      onChange={onChange}
-//   18    />
-//   19    <Checkbox appearance="secondary" id="With-label" label="Secondary" onChange={onChange} />
-//   20  </form>
-//   21)
-//   13      appearance="secondary"
-//   13      appearance="secondary"
-//   14      id="With-label"
-//   15      label="Secondary"
-//   16      checked
-//   17      onChange={onChange}
-//   18    />
-//   19    <Checkbox appearance="secondary" id="With-label" label="Secondary" onChange={onChange} />
-//   20  </form>
-//   21)
