@@ -14,5 +14,5 @@ import './Progress/Progress.stories';
 import './Radio/Radio.stories';
 import './Snackbar/Snack.stories';
 import './TextInput/TextInput.stories';
-// import './Toggle/Toggle.stories';
+import './Toggle/Toggle.stories';
 import './Welcome/Welcome.stories';
