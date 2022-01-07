@@ -14,6 +14,7 @@ This is the boiler plate of crownstack react-native project. We strictly recomme
 - We use Icomoons for using svg icons within the project and there is already created atom for that named Icon. Benefit of using icomoons is we can send updates of icons without uploading it on stores i.e on the air as icomoons doesn't linked on the native side. (https://www.npmjs.com/package/react-icomoon)
 - We encourage to use `react-native-size-matters` to scale the size on the phones for larger or smaller phones even on iPad. (https://github.com/nirsky/react-native-size-matters)
 - We use `https://github.com/DylanVann/react-native-fast-image` to chache image.
+- We use `https://github.com/infinitered/reactotron/blob/master/docs/quick-start-react-native.md` to debug the build.
 
 # StoryBook Setup
 
