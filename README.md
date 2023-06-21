@@ -1,6 +1,6 @@
 # RNArchitecture
 
-This is the boiler plate of react-native project. We strictly recommend to follow this architecture no matter whatever the kind of project it is. Idea behind is to follow the same pattern and standard across the company.
+This is the boiler plate of react-native project. We made it for crownstack which was a service based company, Idea behind this was to keep everyone align to follow the same code and pattern.
 
 # Highlight of the architecture
 
