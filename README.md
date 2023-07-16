@@ -44,3 +44,14 @@ Note: If you get an option to setup server press 'Yes' and set it up.
 - Push notification setup
 - Code Push
 - Documentation is pending
+- Redux setup is pending
+
+
+## Contribution
+
+- Feel free to pick task from the pending items.
+- Contribute by writing the documentation for any components or its usage.
+- Feel free to add any tool usage.
+- Write stories for components using storybook.
+
+
