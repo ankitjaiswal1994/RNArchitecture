@@ -21,6 +21,7 @@ storiesOf('Button', module)
         style={{
           textDecorationLine: 'underline',
           color: '#61ce70',
+          fontSize: 20,
         }}>
         {text('Button text', 'SignUp')}
       </Text>
@@ -40,7 +41,9 @@ storiesOf('Button', module)
         borderRadius: 20,
         backgroundColor: '#33ce9b',
       }}>
-      <Text style={{ color: '#fff', fontSize: 20 }}>Filled Button</Text>
+      <Text style={{ color: '#fff', fontSize: 20 }}>
+        {text('Button text', 'Filled Button')}
+      </Text>
     </Button>
   ))
   .add('Outline button', () => (
@@ -58,6 +61,8 @@ storiesOf('Button', module)
         borderWidth: 1,
         borderColor: '#23a455',
       }}>
-      <Text style={{ color: '#23a455' }}>Outline Button</Text>
+      <Text style={{ color: '#23a455' }}>
+        {text('Button text', 'Outline Button')}
+      </Text>
     </Button>
   ));

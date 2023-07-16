@@ -41,12 +41,72 @@ storiesOf('Card', module)
       <Text> Card</Text>
     </Card>
   ))
-  .add('Toast', () => (
+  .add('Toast-Success ', () => (
+    <Card
+      onPress={action('onPress')}
+      style={{
+        borderTopWidth: 8,
+        borderTopColor: '#4ca65b',
+        backgroundColor: '#05294a',
+        borderLeftWidth: 0,
+        height: 80,
+        width: '90%',
+      }}>
+      <View style={{ flexDirection: 'row' }}>
+        <Text style={{ color: 'white' }}>
+          Lorem ipsum dolor sit amet. Rem esse saepe vel libero voluptatum ea
+          quam velit sed eaque aperiam ex optio dolorem qui mollitia deleniti
+          est magnam voluptatem.
+        </Text>
+      </View>
+    </Card>
+  ))
+  .add('Toast-Error', () => (
     <Card
       onPress={action('onPress')}
       style={{
         borderTopWidth: 8,
         borderTopColor: '#d95502',
+        backgroundColor: '#05294a',
+        borderLeftWidth: 0,
+        height: 80,
+        width: '90%',
+      }}>
+      <View style={{ flexDirection: 'row' }}>
+        <Text style={{ color: 'white' }}>
+          Lorem ipsum dolor sit amet. Rem esse saepe vel libero voluptatum ea
+          quam velit sed eaque aperiam ex optio dolorem qui mollitia deleniti
+          est magnam voluptatem.
+        </Text>
+      </View>
+    </Card>
+  ))
+  .add('Toast-Info ', () => (
+    <Card
+      onPress={action('onPress')}
+      style={{
+        borderTopWidth: 8,
+        borderTopColor: '#87cefa',
+        backgroundColor: '#05294a',
+        borderLeftWidth: 0,
+        height: 80,
+        width: '90%',
+      }}>
+      <View style={{ flexDirection: 'row' }}>
+        <Text style={{ color: 'white' }}>
+          Lorem ipsum dolor sit amet. Rem esse saepe vel libero voluptatum ea
+          quam velit sed eaque aperiam ex optio dolorem qui mollitia deleniti
+          est magnam voluptatem.
+        </Text>
+      </View>
+    </Card>
+  ))
+  .add('Toast-Warn ', () => (
+    <Card
+      onPress={action('onPress')}
+      style={{
+        borderTopWidth: 8,
+        borderTopColor: '#f7c220',
         backgroundColor: '#05294a',
         borderLeftWidth: 0,
         height: 80,

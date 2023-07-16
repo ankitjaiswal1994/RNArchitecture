@@ -6,7 +6,7 @@ import Badges from '.';
 
 storiesOf('Badge', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
-  .add('Badge without content  ', () => (
+  .add('Without content  ', () => (
     <Badges size={30} onPress={action('clicked-badge')}>
       15
     </Badges>

@@ -63,7 +63,7 @@ storiesOf('TextInput', module)
           width: '90%',
           backgroundColor: '#ffffff',
         }}></RNTextInput>
-      <Text style={{ color: '#8c8c8c', marginRight: 100 }}>
+      <Text style={{ color: '#ff1a1a', marginRight: 100 }}>
         Password is more than 8 characters
       </Text>
     </>
