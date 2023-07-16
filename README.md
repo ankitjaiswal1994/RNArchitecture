@@ -16,6 +16,16 @@ This is the boiler plate of react-native project. We made it for crownstack whic
 - We use `https://github.com/DylanVann/react-native-fast-image` to cache image.
 - We use `https://github.com/infinitered/reactotron/blob/master/docs/quick-start-react-native.md` to debug the build.
 
+# Misc Needs
+ - To track the npm packages and its releases we can use npm-gui. https://npm-gui.nullapps.dev/docs/npm-gui/installation/
+   How it works:
+   1. Install it globally `~/$ npm install -g npm-gui`
+   2. Run inside your project`~/$ npm-gui`
+      You will see the list of npm packages in the browser below:
+
+<img width="1426" alt="Screenshot 2023-07-16 at 12 06 08 PM" src="https://github.com/ankitjaiswal1994/RNArchitecture/assets/20721521/af4be036-07dd-4c39-a9b2-8d96d1355b1f">
+
+
 # StoryBook Setup
 
 ## Add Storybook:
