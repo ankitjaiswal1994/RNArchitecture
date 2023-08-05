@@ -11,7 +11,7 @@ import { AuthProvider } from './src/context/Authentication';
 import PushNotification, { Importance } from 'react-native-push-notification';
 import messaging from '@react-native-firebase/messaging';
 
-export default from './storybook';
+// export default from './storybook';
 
 const paperTheme: typeof DefaultTheme = {
   ...DefaultTheme,
